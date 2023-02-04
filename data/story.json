@@ -1,0 +1,70 @@
+{
+    "title": "Your title",
+    "contents": {
+        "A": {
+            "content": "You choose A",
+            "options": [{
+                    "option": "Go to B",
+                    "linkPath": "B",
+                    "ifConditions": [],
+                    "notIfConditions": []
+                },
+                {
+                    "option": "Go to C",
+                    "linkPath": "C",
+                    "ifConditions": [],
+                    "notIfConditions": []
+                }
+            ],
+            "flags": [
+                "GotoA"
+            ]
+        },
+        "B": {
+            "content": "You choose B",
+            "options": [{
+                "option": "Go to C",
+                "linkPath": "C",
+                "ifConditions": [],
+                "notIfConditions": []
+            }],
+            "flags": [
+                "GotoB"
+            ]
+        },
+        "C": {
+            "content": "You choose C",
+            "options": [{
+                    "option": "Go to D and you have gone to A",
+                    "linkPath": "DA",
+                    "ifConditions": [
+                        "GotoA"
+                    ],
+                    "notIfConditions": []
+                },
+                {
+                    "option": "Go to D and you have gone to B",
+                    "linkPath": "DB",
+                    "ifConditions": [
+                        "GotoB"
+                    ],
+                    "notIfConditions": []
+                }
+            ],
+            "flags": [
+                "GotoC"
+            ]
+        },
+        "DA": {
+            "content": "You choose DA",
+            "options": [],
+            "flags": []
+        },
+        "DB": {
+            "content": "You choose DB",
+            "options": [],
+            "flags": []
+        }
+    },
+    "initial": "A"
+}

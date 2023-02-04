@@ -1,0 +1,15 @@
+魔力點分配- Dict
+{
+    血量: int
+    攻擊: int
+    防禦: int
+    體力: int
+    敏捷: int
+    智力: int
+}
+魔力點剩餘: int
+story: story
+storyId: int
+背包頁數: int
+背包類型: str
+戰報頁數: int
